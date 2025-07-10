@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day8</title>
+</head>
+<body>
+  <h2>textarea 태그</h2>
+  <textarea
+    id="message"
+    cols="64"
+    rows="5"
+  >
+  </textarea>
+  
+  <h2>select, option 태그</h2>
+  <label for="lang">언어</label> <br>
+  <select id="lang">
+    <option value="">--언어선택--</option>
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="js">JS</option>
+    <option value="ts">TS</option>
+  </select>
+
+  <br>
+
+  <label for="shopping">쇼핑목록</label> <br>
+  <select id="fruit"> <br>
+    <optgroup label="과일">
+      <option value="f_grape">포도</option>
+      <option value="f_melon">멜론</option>
+      <option value="f_strawberry">딸기</option>
+    </optgroup>
+    <optgroup label="채소">
+      <option value="v_carrot">당근</option>
+      <option value="v_cucumber">오이</option>
+      <option value="v_eggplant">가지</option>
+    </optgroup>
+    <optgroup label="옷">
+      <option value="pants">바지</option>
+      <option value="outer">아우터</option>
+      <option value="top">상의</option>
+    </optgroup>
+  </select>
+
+  <h2>datalist 태그</h2>
+  <label for="job">현재 직업</label> <br>
+  <input id="job" list="jobs">
+  <datalist id="jobs">
+    <option value="학생">
+    <option value="디자이너">
+    <option value="퍼블리셔">
+    <option value="개발자">
+  </datalist>
+  
+  <h2>progress 태그</h2>
+  <progress
+    id="progressbar"
+    max="100">
+    0%
+  </progress>
+  <button id="prgStartBtn" type="button">시작</button>
+
+  <br><br>
+
+  <h2>meter 태그</h2>
+
+  <meter
+    min="0" max="100"
+    low="33" high="67"
+    optimum="50" value="20">
+  20달러
+  </meter>
+  <meter
+    min="0" max="100"
+    low="33" high="67"
+    optimum="90" value="80">
+  80달러
+  </meter>
+<!--low / high 에 따라서 색상이 바뀌고(전체 번위를 3등분 하는 두 수치), value가 optimum에 가까워야지 최적화 된 상태인 것임.-->
+
+</body>
+</html>
+

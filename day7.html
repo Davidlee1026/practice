@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day7</title>
+</head>
+<body>
+  <label for="txtIP">text : </label>
+  <input 
+    id="txtIP"
+    type="text"
+    placeholder="5자 이하"
+    maxlength="5"
+  >
+  
+  <br> <br>
+  
+  <label for="pwdIP">Password : </label>
+  <input
+    id="pwdIP"
+    type="password"
+  >
+  
+  <br> <br>
+  
+  <input
+    id="numIP"
+    type="number"
+    max="8"
+    min="0"
+  >
+  
+  <br> <br>
+  
+  <input
+    id="rgIP"
+    type="range"
+    min="0"
+    max="100"
+  >
+  
+  <br> <br>
+  
+  <input
+    id="dateIP"
+    type="date"
+  >
+  
+  <br> <br>
+
+  <input
+    id="cbIP"
+    type="checkbox"
+    
+  >
+  <label for="cbIP">유기농</label>
+
+  <br> <br>
+
+  <input type="radio" id="v_carrot" name="vegetable">
+  <label for="v_carrot">당근</label>
+  <input type="radio" id="v_eggplant" name="vegetable">
+  <label for="v_eggplant">가지</label>
+  <input type="radio" id="v_cucumber" name="vegetable">
+  <label for="v_cucumber">오이</label>
+  <input type="radio" id="v_onion" name="vegetable">
+  <label for="v_onion">양</label>
+  <input type="radio" id="v_garlic" name="vegetable">
+  <label for="v_garlic">마늘</label>
+<!--name에 같은 것들이 있으면 같은 name끼리는 중복 선택이 안됨.-->
+  <input type="radio" name="fruit" id="f_strawberry">
+  <label for="f_strawberry">딸기</label>
+  <input type="radio" name="fruit" if="f_melon">
+  <label for="f_melon">멜론</label>
+  <input type="radio" name="fruit" id="f_grape">
+  <label for="f_grape">포도</label>
+  <br> <br>
+  <input
+    id="fileIP"
+    type="file"
+    accept
+  >
+  <br> <br>
+  <input
+    id="mulfilIP"
+    tpye="file"
+    multiple
+  >
+  <br> <br>
+  <input
+    id="hidIP"
+    type="hidden"
+  >
+  <br><hr><br>
+
+  <input
+    id="emailIP"
+    type="email"
+  >
+  <br> <br>
+  <button type="submit">제출</button>
+
+
+
+</body>
+</html>
