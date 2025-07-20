@@ -1,0 +1,45 @@
+.outer li{
+  color:olivedrab
+} 
+
+.second > li {
+  color:blue;
+}
+
+.second li li {
+  color:aqua
+}
+
+.third ~ li { /*클래스 다음으로 오는 li들을 모두 고르는 것 */
+  font-style: italic;
+}
+
+.third + li { /* 클래스 다음 1개의 li만 고름 */
+  font-weight: bold;
+}
+
+.fourth li:first-child,
+.fourth li:last-child{ /* 첫 번째 마지막 요소 클래스 */
+  color : yellowgreen;
+}
+
+.fifth > li:not(:last-child) { /* lastchild가 아닌 클래스 */
+  text-decoration: line-through;
+}
+
+ul:not(.sixth) li {
+  font-weight: bold;
+}
+
+.seventh li:nth-child(3) {
+  font-weight: bold;
+  color: deeppink;
+}
+
+.eighth:hover { /* 마우스 오버해야 나타나는 기능 */
+  font-weight: bold;
+  color: antiquewhite;
+}
+.nineth:nth-child(odd){ /* #(숫자n), #n(n번째마다), #n+#(n번째마다+숫자n), odd(홀수), even(짝수) */
+  color: brown;
+}
